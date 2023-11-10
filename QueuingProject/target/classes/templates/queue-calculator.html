@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Queue Calculator</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>System Metrics Analyzer</h1>
+        
+    </div>
+
+    <div class="container">
+        <!-- Input Container -->
+        <div class="input-container">
+            <h2>Input</h2>
+            <form id="queueForm">
+                <label for="arrivalRate">Mean Arrival Rate per Hour:</label>
+                <input type="text" name="arrivalRate" required><br>
+
+                <label for="serviceRate">Mean Service Rate per Server per Hour:</label>
+                <input type="text" name="serviceRate" required><br>
+
+                <label for="servicePoints">Number of Service Points:</label>
+                <input type="text" name="servicePoints" required><br>
+
+                <input type="submit" value="Calculate">
+            </form>
+        </div>
+
+        <!-- Output Container -->
+        <div class="output-container">
+            <h2>Results</h2>
+            <div id="results">
+                <!-- Results will be loaded here -->
+            </div>
+        </div>
+    </div>
+ <script src="/js/script.js"></script> 
+    
+</body>
+</html>

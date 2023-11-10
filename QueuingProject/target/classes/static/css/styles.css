@@ -1,0 +1,62 @@
+ /* CSS for the layout */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column; /* Added to stack header and container */
+            align-items: center; /* Center horizontally */
+            height: 100vh;
+            margin: 0;
+            /*background-color: #95a5a6;*/
+            
+        }
+
+        .header {
+           
+            color: black;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+            justify-content: space-between; /* Added to separate input and output */
+            
+        }
+
+        .input-container, .output-container {
+            flex: 1;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            
+        }
+
+        .input-container label, .output-container p {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .input-container input[type="text"] {
+            width: 97%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        /* Style the submit button */
+        .input-container input[type="submit"] {
+            background-color: #4CAF50; /* Green background */
+            color: white;
+            padding: 10px 20px; /* More padding for a wider button */
+            border: none;
+            cursor: pointer;
+            width: 100%; /* Make it full width */
+        }
+
+        /* Additional CSS for spacing between lines in the output */
+        .output-container p {
+            margin: 0;
+        }
